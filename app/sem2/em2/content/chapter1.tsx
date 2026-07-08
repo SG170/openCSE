@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Ch1Content = () => {
   return (
     <div className="course-content">
@@ -55,7 +57,13 @@ export const Ch1Content = () => {
           </p>
         </div>
 
-        <p className="p-text mt-4">Diagram: <strong>sequence-limit.png</strong></p>
+        <Image
+          src="/sem2/em2_01.png"
+          alt="Sequence converging to a limit"
+          width={800}
+          height={400}
+          className="mt-4 rounded-lg border border-[#c7a669]"
+        />
       </section>
 
       <hr className="my-6 border-[#c7a669] opacity-40" />
@@ -102,8 +110,14 @@ export const Ch1Content = () => {
             <strong>Alternating Series Test:</strong> decreasing terms with limit 0 converge.
           </li>
         </ul>
-
-        <p className="p-text">Diagram: <strong>series-tests.png</strong></p>
+        <Image
+          src="/sem2/em2_02.png"
+          alt="series-tests"
+          width={800}
+          height={400}
+          className="mt-4 rounded-lg border border-[#c7a669]"
+        />
+      
       </section>
 
       <hr className="my-6 border-[#c7a669] opacity-40" />
@@ -135,7 +149,13 @@ export const Ch1Content = () => {
           </ul>
         </div>
 
-        <p className="p-text mt-4">Diagram: <strong>taylor-series.png</strong></p>
+        <Image
+          src="/sem2/em2_03.png"
+          alt="taylor-series"
+          width={800}
+          height={400}
+          className="mt-4 rounded-lg border border-[#c7a669]"
+        />
       </section>
     </div>
   );
